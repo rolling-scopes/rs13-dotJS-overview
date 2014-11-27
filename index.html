@@ -50,21 +50,22 @@
             h1 {
                 text-shadow: none !important;
                 text-transform: none !important;
-                background-color: rgba(0,0,0,0.3);
+                /*background-color: rgba(0,0,0,0.3);*/
                 color: yellow !important;
-                font-family: 'Lobster', cursive !important;
+                font-family: "Montserrat", Impact, sans-serif !important;
             }
 
             h2 {
-                /*text-shadow: none !important;*/
-                /*text-transform: none !important;*/
-                background-color: rgba(0,0,0,0.3);
+                text-shadow: none !important;
+                text-transform: none !important;
+                /*background-color: rgba(0,0,0,0.3);*/
                 color: yellow !important;
-                font-family: 'Lobster', cursive !important;
+                font-family: "Montserrat", Impact, sans-serif !important;
             }
 
-            h2.top {
-                top: -100px;
+            h2.speaker-name {
+                bottom: -350px;
+                position: absolute;
             }
 
         </style>
@@ -85,8 +86,8 @@
                 <section data-background="images/lightsable.jpg"></section>
                 <section data-background="images/axel.jpg"></section>
                 <section data-background="images/polymer.jpg"></section>
-                <section data-background="images/afterparty.jpg"></section>
                 <section data-background="images/cheese.jpg"></section>
+                <section data-background="images/afterparty.jpg"></section>
 
                 <section>
                 	<section>
@@ -95,15 +96,41 @@
 
                     <section data-background="images/dotCSSvenue.jpg"></section>
                     <section data-background="images/chandelier.jpg"></section>
-                    <section data-background="images/Daniel_Glazman.jpg"></section>
-                    <section data-background="images/Harry_Roberts.jpg"></section>
-                    <section data-background="images/Hugo_Giraudel.jpg"></section>
-                    <section data-background="images/Estelle_Weyl.jpg"></section>
-                    <section data-background="images/Bert_Bos.jpg"></section>
-                    <section data-background="images/Nicolas_Gallagher.jpg"></section>
-                    <section data-background="images/Kaelig_Deloumeau_Prigent.jpg"></section>
+                    <section data-background="images/Daniel_Glazman.jpg">
+                        <h2 class="speaker-name">Daniel Glazman (W3C)</h2>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            * cssom
+                        </script>
+                    </section>
+                    <section data-background="images/Kaelig_Deloumeau_Prigent.jpg">
+                        <h2 class="speaker-name">Kaelig Deloumeau Prigent (Guardian, New York Times)</h2>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            *  issue with metric system
+                            *  Bridging the gap between developers and designers at the Guardian
+                            *  http://blog.kaelig.fr/
+                        </script>
+                    </section>
+                    <section data-background="images/Hugo_Giraudel.jpg">
+                        <h2 class="speaker-name">Hugo Giraudel (SassDoc)</h2>
+                    </section>
+                    <section data-background="images/Estelle_Weyl.jpg">
+                        <h2 class="speaker-name">Estelle Weyl</h2>
+                    </section>
+                    <section data-background="images/Bert_Bos.jpg">
+                        <h2 class="speaker-name">Bert Bos (W3C)</h2>
+                    </section>
+                    <section data-background="images/quotes.jpg"></section>
+
+                    <section data-background="images/Nicolas_Gallagher.jpg">
+                        <h2 class="speaker-name">Nicolas Gallagher</h2>
+                    </section>
+
                     <section data-background="images/GregorAdams.jpg">
-                        <a href="https://twitter.com/GregorAdams">https://twitter.com/GregorAdams</a>
+                        <h2 class="speaker-name">Gregor Adams</h2>
                     </section>
 	               	<section data-background="images/webaccessibility.jpg"></section>
 	                <section data-background="images/webaccessibility2.jpg"></section>
@@ -114,74 +141,126 @@
                 	<section>
                 		<h2>dotJS</h2>
                 	</section>
-                    <section data-background="images/Yehuda_Katz.jpg"></section>
-                    <section data-markdown>
-                        <script type="text/template">
-                            stay indie, avoid the big-bang changes.
-                            better code now
-                            Release/ adapt quick
-
-
-                            Diversify contributers
-                            Vision
-                            Legitimacy
-                            Resolve
-                            Protection - avoid big bang rewrites to avoid getting in a situation like Python 3
-                            Incremental
-                            Ship it
-                        </script>
-                    </section>
-
-                    <section data-background="images/substack.jpg"></section>
-                    <section data-markdown>
-                        <script type="text/template">
-                            https://github.com/dominictarr/tslide
-
-                            https://github.com/substack/keyboot
-                            https://github.com/substack/keyboot-example-app
-                        </script>
-                    </section>
-
                     <section data-background="images/conf_entry.jpg"></section>
-                    <section data-markdown>
-                        <script type="text/template">
-                            A paragraph with some text and a [link](http://hakim.se).
-                        </script>
-                    </section>
-                    
                     <section data-background="images/dotjsVenue.jpg"></section>
+
+                    <section>
+                        <h2>dotJS prize</h2>
+                        <p>gulp.js, The streaming build system</p>
+                        <p>pixi.js, 2D webGL renderer with canvas fallback</p>
+                    </section>
+
+                    <section data-background="images/react_10k.jpg">
+                        <h2 class="speaker-name">Paul O’Shannessy (Facebook)</h2>
+                    </section>
                     <section data-markdown>
                         <script type="text/template">
-                            A paragraph with some text and a [link](http://hakim.se).
+                            ## "Facebook has 10.000 components with ReactJS"
+
+                            *  History
+                            *  Open Source
+                            *  ES6,7,*, Polyfills
+                            *  WebWorkers
+
+                            Slides: https://speakerdeck.com/zpao/react-through-the-ages
                         </script>
                     </section>
-                    
 
-                    
-                    <section data-background="images/Domenic_Denicola.jpg"></section>
+                    <section data-background="images/Julien_Lecomte.jpg">
+                        <h2 class="speaker-name">Julien Lecomte (Yahoo)</h2>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            *  farewell to YUI Library
+                            *  ES6 modules (https://github.com/esnext/es6-module-transpiler)
+                            *  polyfills-as-a-service (аналог от FTLabs - https://cdn.polyfill.io/v1/docs/)
+                            *  React
+                            *  Open Source (Yahoo is contributing back)
+                            *  Format.JS
+
+                            "The age of large platform libraries is over." -- @yahoo Engineering on moving Y! Mail to React.js and Node.js.
+                        </script>
+                    </section>
+
+                    <section data-background="images/John_David_Dalton.jpg">
+                        <h2 class="speaker-name">John David Dalton (Lo-Dash, jsPerf, Chakra)</h2>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            Slides: https://docs.google.com/presentation/d/1roCpgHDGnR_JiuZOOwGIgWPMF88cJvdbBdTlycuBOkA/present?slide=id.g273a08245_038
+                        </script>
+                    </section>
+
+                    <section data-background="images/Joe_McCann.jpg">
+                        <h2 class="speaker-name">Joe McCann</h2>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            *  Slides: http://t.co/Po6ILaYsmp
+                            *  "Write your JavaScript like you would write C."
+                            *  600 characters V8
+
+                            node --allow-natives-syntax app.js
+
+                            %SetFlags(“--max_inlined_source_size=1000");
+
+                            https://github.com/thlorenz/v8-flags/blob/master/flags-0.11.md
+                        </script>
+                    </section>
+
+
+                    <section data-background="images/substack.jpg">
+                        <h2 class="speaker-name">James Halliday aka Substack</h2>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            * make web apps available regardless of connectivity;
+                            * keep much of the personal data of the user only on the user's computer rather than on a remote location/server;
+                            * https://github.com/dominictarr/tslide
+                            * https://github.com/substack/hyperboot
+                            * https://github.com/substack/keyboot
+                            * https://github.com/substack/forkdb
+                            * ex: BitTorrent
+                        </script>
+                    </section>
+
+                    <section data-background="images/Domenic_Denicola.jpg">
+                        <h2 class="speaker-name">Domenic Denicola (Google)</h2>
+                    </section>
                     <section data-markdown>
                         <script type="text/template">
                             https://github.com/tmpvar/jsdom
                             https://github.com/w3c/web-platform-tests
                         </script>
                     </section>
-                    
-                    <section data-background="images/Julien_Lecomte.jpg"></section>
+
+                    <section data-background="images/Justin_Meyer.jpg">
+                        <h2 class="speaker-name">Justin Meyer (CanJS, JavaScriptMVC)</h2>
+                    </section>
+                    <section>
+                        <p>https://github.com/bitovi/checklist</p>
+                    </section>
+
+                    <section data-background="images/Yehuda_Katz.jpg">
+                        <h2 class="speaker-name">Yehuda Katz (Ember.js, Handlebars)</h2>
+                    </section>
                     <section data-markdown>
                         <script type="text/template">
-                            https://cdn.polyfill.io/v1/docs/
-
-                            Format.js from Yahoo engineers will help to make internationalization simple
-
-                            To use #es6 modules right now we're force to use transpiler
-
-                            Crash course for #ES6 modules, polyfills-as-a-service, React & #FormatJS JavaScript internationalization
+                            0. don't die
+                            1. stay indie
+                            2. avoid big bang rewrites to avoid getting in a situation like Python 3
+                            3. "лучше синица в руках, чем журавль в небе"
+                            4. Release / adapt quick
+                            ...
                         </script>
                     </section>
-                    
-                    <section data-background="images/Angus_Croll.jpg"></section>
+
+                    <section data-background="images/Angus_Croll.jpg">
+                        <h2 class="speaker-name">Angus Croll (Twitter)</h2>
+                    </section>
                     <section data-markdown>
                         <script type="text/template">
+                            Slides: https://speakerdeck.com/anguscroll/the-book-nerds-guide-to-javascript
                             Keep experimenting & having fun with your code.
 
                             http://blog.anguscroll.com/tupac-does-javascript
@@ -189,44 +268,28 @@
 
                         </script>
                     </section>
-                    
-                    <section data-background="images/react_10k.jpg"></section>
-                    <section data-markdown>
-                        <script type="text/template">
-                            Paul O’Shannessy
 
-                            https://speakerdeck.com/zpao/react-through-the-ages
-
-                            Facebook has 10.000 components with ReactJS. holy shit.
-                        </script>
-                    </section>
-                    
-                    <section data-background="images/John_David_Dalton.jpg"></section>
-                    <section data-markdown>
-                        <script type="text/template">
-                            A paragraph with some text and a [link](http://hakim.se).
-                        </script>
-                    </section>
-                    
-  					<section data-background="images/Joe_McCann.jpg"></section>
-  					<section data-markdown>
-                        <script type="text/template">
-                            very interesting with the length of max. 600 characters V8
-
-                            https://github.com/thlorenz/v8-flags/blob/master/flags-0.11.md
-                        </script>
-                    </section>
-
-                    <section>
-                        <p>https://github.com/bitovi/checklist</p>
-                    </section>
-                    
                 </section>
 
                 <section>
-                    <h2>dotJS prize</h2>
-                    <p>gulp.js, The streaming build system</p>
-                    <p>pixi.js, 2D webGL renderer with canvas fallback</p>
+                    <h2>RS Conf</h2>
+                </section>
+
+                <section>
+                    <a href="http://conf.rollingscopes.com/">http://conf.rollingscopes.com/</a>
+                </section>
+
+                <section>
+                    <h2>30$</h2>
+                </section>
+
+                <section>
+                    <h2>300 тыс сегодня на 1м этаже</h2>
+                </section>
+
+                <section>
+                    <h2>Thank you!</h2>
+                    <p>Questions?</p>
                 </section>
 
 
